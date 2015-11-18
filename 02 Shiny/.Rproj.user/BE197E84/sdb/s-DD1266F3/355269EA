@@ -1,0 +1,17 @@
+{
+    "contents" : "#ui.R \n\nlibrary(shiny)\n\n# Define UI for application that plots random distributions \nshinyUI(pageWithSidebar(\n\n# Application title\nheaderPanel(\"Hello Shiny!\"),\n\n# Sidebar with a slider input for number of observations\n  sidebarPanel(\n    sliderInput(\"KPI1\", \n                \"KPI_Low_Max_value:\", \n                min = 0,\n                max = 0.05, \n                value = 0.05),\n    sliderInput(\"KPI2\", \n                \"KPI_Medium_Max_value:\", \n                min = 0.05,\n                max = 0.14, \n                value = 0.14),\n    sliderInput(\"LowerLimit\", \n                \"Lower_Limit\", \n                min = 0,\n                max = 0.9917225, \n                value = 0.9917225),\n    \n    sliderInput(\"UpperLimit\", \n                \"Upper_Limit\", \n                min = 0.9917225,\n                max = 1.04, \n                value = 0.9961)\n    \n  ),\n\n# Show a plot of the generated distribution\n  mainPanel(\n    plotOutput(\"distPlot\")\n    #plotOutput(\"distTable\")\n  )\n))\n",
+    "created" : 1447822206504.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4176265641",
+    "id" : "355269EA",
+    "lastKnownWriteTime" : 1447824936,
+    "path" : "~/Desktop/Data Visualization/DV_SProject/02 Shiny/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
