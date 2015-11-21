@@ -10,6 +10,7 @@ headerPanel("Hello Shiny!"),
 
 # Sidebar with a slider input for number of observations
   sidebarPanel(
+    
     sliderInput("KPI1", 
                 "KPI_Low_Max_value:", 
                 min = 0,
@@ -30,7 +31,18 @@ headerPanel("Hello Shiny!"),
                 "Upper_Limit", 
                 min = 0.9917225,
                 max = 1.04, 
-                value = 0.9961)
+                value = 0.9961),
+    
+    sliderInput("Quality",
+                "Quality_Range",
+                min=4,
+                max=8,
+                value=6),
+    sliderInput("AVG_ALCOHOL",
+                "average_alcohol_range",
+                min=1,
+                max=13.2,
+                value=6)
     
   ),
 
